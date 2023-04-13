@@ -12,8 +12,7 @@ def hash(inputText):
 def read_input():
     firstInput = input()
     if firstInput[0]=="F":
-        filename=input()
-        file=open(str("test/"+filename), "r")
+        file=open(str("tests/06"), "r")
         pattern = file.readline()
         text = file.readline()
         return (pattern, text)
