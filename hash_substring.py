@@ -15,7 +15,7 @@ def read_input():
         file=open(str("tests/06"), "r")
         pattern = file.readline()
         text = file.readline()
-        return (pattern, text)
+        return (pattern.rstrip(), text.rstrip())
     else:
         return (input().rstrip(), input().rstrip())
 
